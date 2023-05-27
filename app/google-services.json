@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "855605873308",
+    "project_id": "exam-ec212",
+    "storage_bucket": "exam-ec212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:855605873308:android:73b2a542d5db5eae64bb59",
+        "android_client_info": {
+          "package_name": "uz.gita.examdoctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqZG-viSY3W-IERrm_Iv6CjJM60Rky9WQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

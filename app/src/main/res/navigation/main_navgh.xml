@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navgh"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        tools:layout="@layout/screen_splash"
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.examdoctor.presentation.screen.splash.SplashScreen"
+        android:label="SplashScreen" >
+        <action
+            android:id="@+id/action_splashScreen_to_firstPage"
+            app:destination="@id/firstPage"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_first_page"
+        android:id="@+id/firstPage"
+        android:name="uz.gita.examdoctor.presentation.pager.FirstPage"
+        android:label="FirstPage" >
+        <action
+            android:id="@+id/action_firstPage_to_viewPagerScreen"
+            app:destination="@id/viewPagerScreen"
+            app:popUpTo="@id/firstPage"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_pager"
+        android:id="@+id/viewPagerScreen"
+        android:name="uz.gita.examdoctor.presentation.pager.ViewPagerScreen"
+        android:label="ViewPagerScreen" >
+        <action
+            android:id="@+id/action_viewPagerScreen_to_profileScreen"
+            app:destination="@id/profileScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_profile"
+        android:id="@+id/profileScreen"
+        android:name="uz.gita.examdoctor.presentation.screen.fillprofile.ProfileScreen"
+        android:label="ProfileScreen" >
+        <argument
+            android:name="phone"
+            app:argType="string" />
+    </fragment>
+</navigation>
